@@ -5,9 +5,9 @@
       <th>Completed</th>
     </tr>
 
-    {{#each pagedContent}}
+    {{#each item in pagedContent}}
       <tr class="todo">
-        <td>{{name}}</td>
+        <td>{{item.name}}</td>
         <td>
           {{input type="checkbox" checked=completed}}
         </td>

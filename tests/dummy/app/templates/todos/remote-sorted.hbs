@@ -8,9 +8,9 @@
     <th>Completed</th>
   </tr>
 
-  {{#each content}}
+  {{#each item in content}}
     <tr class="todo">
-      <td class="name">{{name}}</td>
+      <td class="name">{{item.name}}</td>
       <td>
         {{input type="checkbox" checked=completed}}
       </td>
